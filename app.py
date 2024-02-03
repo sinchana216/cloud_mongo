@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-# Connect to MongoDB
+# Connect to MongoDB without username and password
 client = MongoClient("mongodb://localhost:27017")
 db = client['student_database']
 collection = db['student_collection']
